@@ -16,14 +16,7 @@ class ViewController: UIViewController, WKUIDelegate {
     
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()
-        let contentController = webConfiguration.userContentController;
-        
-        contentController.addUserScript(WKUserScript (
-            source: "window.alert2 = function(message){window.webkit.messageHandlers.messageBox.postMessage({message:message});};",
-            injectionTime: WKUserScriptInjectionTime.atDocumentStart,
-            forMainFrameOnly: true))
-        contentController.add(NativeJsScriptMessageHandler(uiViewController: self), name: "messageBox")
-        
+        configureContentController(webConfiguration: webConfiguration)
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
         view = webView
@@ -40,7 +33,14 @@ class ViewController: UIViewController, WKUIDelegate {
         super.didReceiveMemoryWarning()
     }
     
-   
-
+    func configureContentController(webConfiguration: WKWebViewConfiguration!){
+        let contentController = webConfiguration.userContentController;
+        
+        contentController.addUserScript(WKUserScript (
+            source: "window.alert2 = function(message){window.webkit.messageHandlers.messageBox.postMessage({message:message});};",
+            injectionTime: WKUserScriptInjectionTime.atDocumentStart,
+            forMainFrameOnly: true))
+        contentController.add(NativeJsScriptMessageHandler(uiViewController: self), name: "messageBox")
+    }
 }
 
