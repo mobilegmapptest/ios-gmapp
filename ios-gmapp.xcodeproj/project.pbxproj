@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD020BEC1E8599DD00535D17 /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = CD020BEB1E8599DD00535D17 /* home.html */; };
+		CD020BEE1E85C7C200535D17 /* NativeJsScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD020BED1E85C7C200535D17 /* NativeJsScriptMessageHandler.swift */; };
 		CD4C0A201E858AD4003223F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C0A1F1E858AD4003223F7 /* AppDelegate.swift */; };
 		CD4C0A221E858AD4003223F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C0A211E858AD4003223F7 /* ViewController.swift */; };
 		CD4C0A251E858AD4003223F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4C0A231E858AD4003223F7 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		CD020BEB1E8599DD00535D17 /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = home.html; path = Assets.xcassets/home.html; sourceTree = "<group>"; };
+		CD020BED1E85C7C200535D17 /* NativeJsScriptMessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeJsScriptMessageHandler.swift; sourceTree = "<group>"; };
 		CD4C0A1C1E858AD4003223F7 /* ios-gmapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-gmapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4C0A1F1E858AD4003223F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD4C0A211E858AD4003223F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CD4C0A261E858AD4003223F7 /* Assets.xcassets */,
 				CD4C0A281E858AD4003223F7 /* LaunchScreen.storyboard */,
 				CD4C0A2B1E858AD4003223F7 /* Info.plist */,
+				CD020BED1E85C7C200535D17 /* NativeJsScriptMessageHandler.swift */,
 			);
 			path = "ios-gmapp";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4C0A221E858AD4003223F7 /* ViewController.swift in Sources */,
+				CD020BEE1E85C7C200535D17 /* NativeJsScriptMessageHandler.swift in Sources */,
 				CD4C0A201E858AD4003223F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
