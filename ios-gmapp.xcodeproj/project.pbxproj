@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					CD4C0A1B1E858AD4003223F7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5F78MXD66U;
 						ProvisioningStyle = Automatic;
 					};
 					CD4C0A2F1E858AD5003223F7 = {
@@ -412,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5F78MXD66U;
 				INFOPLIST_FILE = "ios-gmapp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.ios-gmapp";
@@ -424,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5F78MXD66U;
 				INFOPLIST_FILE = "ios-gmapp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.ios-gmapp";
@@ -505,6 +508,7 @@
 				CD4C0A461E858AD5003223F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD4C0A471E858AD5003223F7 /* Build configuration list for PBXNativeTarget "ios-gmappTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +517,7 @@
 				CD4C0A491E858AD5003223F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD4C0A4A1E858AD5003223F7 /* Build configuration list for PBXNativeTarget "ios-gmappUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				CD4C0A4C1E858AD5003223F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
