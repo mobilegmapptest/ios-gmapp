@@ -14,8 +14,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://google.com");
-        let requestObj = URLRequest(url: url!);
+        let localFilePath = Bundle.main.url(forResource: "home", withExtension: "html")
+        let requestObj = URLRequest(url: localFilePath!);
         webView.loadRequest(requestObj);
     }
 
