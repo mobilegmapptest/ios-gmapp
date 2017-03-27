@@ -18,7 +18,7 @@ class NativeJsScriptMessageHandler: NSObject, WKScriptMessageHandler {
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if message.name == "messageBox" {
+        if message.name == "native" {
             let sentData = message.body as! Dictionary<String, String>
             
             let message:String? = sentData["message"]

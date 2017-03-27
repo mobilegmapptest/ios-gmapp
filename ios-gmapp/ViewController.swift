@@ -36,13 +36,24 @@ class ViewController: UIViewController, WKUIDelegate {
         let webConfiguration = WKWebViewConfiguration()
         let contentController = webConfiguration.userContentController;
         
-        contentController.addUserScript(WKUserScript (
-            source: Bundle.main.url(forResource: "native", withExtension: "js"),
-            injectionTime: WKUserScriptInjectionTime.atDocumentStart,
-            forMainFrameOnly: true))
-        contentController.add(NativeJsScriptMessageHandler(uiViewController: self), name: "messageBox")
+        contentController.addUserScript(readFromFile(fileName: "native", fileType: "js")!)
+        contentController.add(NativeJsScriptMessageHandler(uiViewController: self), name: "native")
         
         return webConfiguration
     }
+    
+    func readFromFile(fileName: String!, fileType: String!) -> WKUserScript? {
+        let localFilePath = Bundle.main.url(forResource: fileName, withExtension: fileType)
+        
+        do {
+            return WKUserScript (
+                source: try String(contentsOf: localFilePath!, encoding: String.Encoding.utf8),
+                injectionTime: WKUserScriptInjectionTime.atDocumentStart,
+                forMainFrameOnly: true)
+        } catch {
+            return nil
+        }
+    }
 }
+
 
