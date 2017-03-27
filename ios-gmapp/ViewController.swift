@@ -15,8 +15,7 @@ class ViewController: UIViewController, WKUIDelegate {
     
     
     override func loadView() {
-        let webConfiguration = WKWebViewConfiguration()
-        configureContentController(webConfiguration: webConfiguration)
+        let webConfiguration = createContentController()
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.uiDelegate = self
         view = webView
@@ -33,14 +32,17 @@ class ViewController: UIViewController, WKUIDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    func configureContentController(webConfiguration: WKWebViewConfiguration!){
+    func createContentController() -> WKWebViewConfiguration {
+        let webConfiguration = WKWebViewConfiguration()
         let contentController = webConfiguration.userContentController;
         
         contentController.addUserScript(WKUserScript (
-            source: "window.alert2 = function(message){window.webkit.messageHandlers.messageBox.postMessage({message:message});};",
+            source: Bundle.main.url(forResource: "native", withExtension: "js"),
             injectionTime: WKUserScriptInjectionTime.atDocumentStart,
             forMainFrameOnly: true))
         contentController.add(NativeJsScriptMessageHandler(uiViewController: self), name: "messageBox")
+        
+        return webConfiguration
     }
 }
 

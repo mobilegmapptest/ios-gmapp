@@ -16,6 +16,7 @@
 		CD4C0A2A1E858AD4003223F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4C0A281E858AD4003223F7 /* LaunchScreen.storyboard */; };
 		CD4C0A351E858AD5003223F7 /* ios_gmappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C0A341E858AD5003223F7 /* ios_gmappTests.swift */; };
 		CD4C0A401E858AD5003223F7 /* ios_gmappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C0A3F1E858AD5003223F7 /* ios_gmappUITests.swift */; };
+		CDADADEC1E898F090025C7FC /* native.js in Resources */ = {isa = PBXBuildFile; fileRef = CDADADEB1E898F090025C7FC /* native.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CD4C0A3B1E858AD5003223F7 /* ios-gmappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-gmappUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4C0A3F1E858AD5003223F7 /* ios_gmappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_gmappUITests.swift; sourceTree = "<group>"; };
 		CD4C0A411E858AD5003223F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDADADEB1E898F090025C7FC /* native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = native.js; path = Assets.xcassets/native.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				CD4C0A281E858AD4003223F7 /* LaunchScreen.storyboard */,
 				CD4C0A2B1E858AD4003223F7 /* Info.plist */,
 				CD020BED1E85C7C200535D17 /* NativeJsScriptMessageHandler.swift */,
+				CDADADEB1E898F090025C7FC /* native.js */,
 			);
 			path = "ios-gmapp";
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				CD020BEC1E8599DD00535D17 /* home.html in Resources */,
 				CD4C0A271E858AD4003223F7 /* Assets.xcassets in Resources */,
 				CD4C0A251E858AD4003223F7 /* Main.storyboard in Resources */,
+				CDADADEC1E898F090025C7FC /* native.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
